@@ -1,6 +1,6 @@
 def connect_4(score = [0, 0]):
     
-    board, move_num = [['o'] * 7 for _ in range(6)], 0
+    board = [['o'] * 7 for _ in range(6)]
     black_wins = red_wins = False
         
     def print_board():
@@ -68,8 +68,7 @@ def connect_4(score = [0, 0]):
             print('Final score:', score[0], 'win' if score[0] == 1 else 'wins', 'for black,', \
                   score[1], 'win' if score[1] == 1 else 'wins', 'for red')
     
-    while move_num < 42:
-        move_num += 1
+    for move_num in range(1, 43):
         print_board()
         col = get_move()
         row = make_move()
