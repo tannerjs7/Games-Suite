@@ -1,4 +1,4 @@
-def connect_4(score):
+def connect_4(score = [0, 0]):
     
     board, move_num = [['o'] * 7 for _ in range(6)], 0
     black_wins = red_wins = False
@@ -77,4 +77,4 @@ def connect_4(score):
             break
     announce_result()
     
-connect_4([0, 0])
+connect_4()
