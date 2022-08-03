@@ -17,7 +17,7 @@ def reflex_test(times = []):
     res = time() - start
     times.append(res)
     print('You pressed RETURN in', res, 'seconds.')
-    if input("To start the test again, just press RETURN. Otherwise, enter anything.") == '':
+    if input("To start the test again, just press RETURN. Otherwise, enter anything. ") == '':
         print()
         reflex_test(times)
     else:
